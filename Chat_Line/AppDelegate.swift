@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.setApplicationId("YpDZrCPA68Phd9FqiVXX1sZ5AgoD5wEk4FMn9p8o",
+            clientKey: "JlqanetJccKLwbduN7YwO7ryU7nCvUsjCThmMOrP")
+
         return true
     }
 
@@ -42,10 +45,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func applicationdidFinishLaunchingWithOptions(application: UIApplication) {
-        Parse.setApplicationId("YpDZrCPA68Phd9FqiVXX1sZ5AgoD5wEk4FMn9p8o",
-            clientKey: "JlqanetJccKLwbduN7YwO7ryU7nCvUsjCThmMOrP")
     }
-
-}
 

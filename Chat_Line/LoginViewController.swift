@@ -28,9 +28,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func OnSignUp(sender: AnyObject) {
         let user = PFUser()
-        user.username = "myUsername"
-        user.password = "myPassword"
-        user.email = "email@example.com"
+        user.username = emailText.text
+        user.password = pswdText.text
+        user.email = emailText.text
         // other fields can be set just like with PFObject
         user["phone"] = "415-392-0202"
         
